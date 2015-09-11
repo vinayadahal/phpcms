@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.gif|\.jpeg|\.bmp)$
+RewriteCond %{REQUEST_URI}  !(\.css|\.js|\.eot|\.svg|\.ttf|\.woff|\.php)$
+ RewriteCond $1 !^(index\.php|images|robots\.txt)
+ RewriteRule ^(.*)$ index.php/$1 [L]
+
+#RewriteRule    ^css/([a-zA-Z-\+]+)/(.*)$    view/theme/$1/css/$2    [QSA]
+#RewriteRule    ^css/images/([a-zA-Z-\+]+)/(.*)$    view/theme/$1/images/$2    [QSA]
+#RewriteRule    ^css/fonts/([a-zA-Z-\+]+)/(.*)$    view/theme/$1/fonts/$2    [QSA]
+#RewriteRule    ^js/([a-zA-Z-\+]+)/(.*)$    view/theme/$1/js/$2    [QSA]
+#RewriteRule    ^images/([a-zA-Z-\+]+)/(.*)$    view/theme/$1/images/$2    [QSA]
+#
+#SetEnv myServerName %{SERVER_NAME}

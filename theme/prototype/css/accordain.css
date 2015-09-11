@@ -1,0 +1,30 @@
+.accordainHeading{
+    padding: 10px 5px;
+    background: #1475A1;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.openClose{
+    color: #fff;
+    padding: 0px 4px;
+    float: left;
+}
+
+.accordainHeading:hover{
+    cursor: pointer;
+}
+
+.accordainBody{
+    padding: 5px;
+    background: #e8e8e8;
+    display: none;
+    margin-bottom: 5px;
+}
+
+.accordainIcon{
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+}
